@@ -1,0 +1,3595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1302</width>
+    <height>742</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>1280</width>
+     <height>720</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#MainMenu {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+QWidget#Account{
+	background: qlineargradient(
+	x1:0,y1:0,x2:1,y2:1,
+	stop:0 #0d0f12
+	stop:0.5 #0b0d10,
+	stop:1 #0a0c0f
+);
+}
+QWidget#WelcomePage {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+QWidget#RegisterPage {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+QWidget#LoginPage {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+QWidget#MainMenu{
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+QWidget#Account{
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+QWidget#Store{
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+QWidget#Roulette{
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+QWidget#SlotMachine{
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+
+QPushButton {
+    background-color: #141418;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #00eaff;
+    color: #0d0d0f;
+}
+
+QPushButton:pressed {
+    background-color: #0099aa;
+}
+
+QLabel {
+    color: #e6e6e6;
+}
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="accessibleIdentifier">
+       <string notr="true"/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>5</number>
+      </property>
+      <widget class="QWidget" name="LoginPage">
+       <property name="styleSheet">
+        <string notr="true">
+QFrame#loginCard {
+    background-color: #141418;
+    border: 1px solid #1f1f22;
+    border-radius: 12px;
+    padding: 25px;
+}
+QLineEdit {
+    background-color: #1a1c20;
+    border: 1px solid #00eaff;
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+    font-size: 16px;
+}
+QPushButton#btnLoginConfirm {
+    background-color: #141418;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+QPushButton#btnLoginConfirm:hover {
+    background-color: #00eaff;
+    color: #0d0d0f;
+}
+QLabel#lblToRegister {
+    color: #00eaff;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+QLabel#lblToRegister:hover {
+    color: #66f0ff;
+}
+QLabel#lblLoginTitle {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+
+</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1281</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <spacer name="verticalSpacer_27">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Policy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>58</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item alignment="Qt::AlignmentFlag::AlignHCenter">
+          <widget class="QFrame" name="loginCard">
+           <property name="minimumSize">
+            <size>
+             <width>400</width>
+             <height>600</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>0</y>
+              <width>391</width>
+              <height>624</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <spacer name="verticalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item alignment="Qt::AlignmentFlag::AlignHCenter">
+              <widget class="QLabel" name="lblLoginTitle">
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Login</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>50</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="txtUsername">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Username:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="txtPassword">
+               <property name="echoMode">
+                <enum>QLineEdit::EchoMode::Password</enum>
+               </property>
+               <property name="placeholderText">
+                <string>Password:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblToRegister">
+               <property name="text">
+                <string>No account? &lt;a href=&quot;#&quot;&gt;Register here&lt;/a&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignmentFlag::AlignHCenter">
+              <widget class="QLabel" name="lblLoginError">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	color:&quot;red&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>200</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QPushButton" name="btnLoginConfirm">
+                 <property name="text">
+                  <string>Confirm</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnCancel">
+                 <property name="text">
+                  <string>Cancel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_28">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Policy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="MainMenu">
+       <property name="styleSheet">
+        <string notr="true">
+QFrame#frameBlackjack{
+	background-color: #141418;
+    border: 1px solid #1f1f22;
+    border-radius: 12px;
+    padding: 25px;
+ 	border-image: url(&quot;:/images/blackjack2.png&quot;);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+QLabel#lblBlackjackTitle {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+
+QFrame#frameRoulette{
+	background-color: #141418;
+    border: 1px solid #1f1f22;
+    border-radius: 12px;
+    padding: 25px;
+ 	border-image: url(&quot;:/images/roulette.jpeg&quot;);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+QLabel#lblRouletteTitle {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+
+QFrame#frameSlots{
+	background-color: #141418;
+    border: 1px solid #1f1f22;
+    border-radius: 12px;
+	padding: 25px;
+ 	border-image: url(&quot;:/images/slots.jpg&quot;);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+QLabel#lblSlotsTitle {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+
+QFrame#frameStore{
+	background-color: #002f2f;
+    border: 6px solid #002323;
+    border-radius: 12px;
+    padding: 25px;
+}
+QFrame#frameAccount{
+	background-color: #005b96;
+    border: 6px solid #03396c;
+    border-radius: 12px;
+    padding: 25px;
+}
+QFrame#frameLeaveToWelcome{
+	background-color: #810000;
+    border: 6px solid #660000;
+    border-radius: 12px;
+    padding: 25px;
+}</string>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>-1</y>
+          <width>1281</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_10" stretch="0,10,0,0,0">
+           <item>
+            <spacer name="verticalSpacer_15">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>30</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="ClickableFrame" name="frameBlackjack">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <widget class="QWidget" name="verticalLayoutWidget_4">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>431</width>
+                  <height>581</height>
+                 </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+                  <widget class="QLabel" name="lblBlackjackTitle">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="text">
+                    <string>Blackjack</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_10">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableFrame" name="frameRoulette">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <widget class="QWidget" name="verticalLayoutWidget_6">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>431</width>
+                  <height>581</height>
+                 </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                  <widget class="QLabel" name="lblRouletteTitle">
+                   <property name="text">
+                    <string>Roulette</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_11">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableFrame" name="frameSlots">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <widget class="QWidget" name="verticalLayoutWidget_7">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>431</width>
+                  <height>581</height>
+                 </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+                  <widget class="QLabel" name="lblSlotsTitle">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="text">
+                    <string>Slots</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_12">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_13">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="ClickableFrame" name="frameStore">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <widget class="QWidget" name="horizontalLayoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>-1</x>
+                  <y>-1</y>
+                  <width>203</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="0">
+                 <property name="spacing">
+                  <number>16</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+                  <widget class="QLabel" name="lblStore">
+                   <property name="text">
+                    <string>Store</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableFrame" name="frameAccount">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <widget class="QWidget" name="horizontalLayoutWidget_3">
+                <property name="geometry">
+                 <rect>
+                  <x>-1</x>
+                  <y>-1</y>
+                  <width>201</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+                  <widget class="QLabel" name="lblAccount">
+                   <property name="text">
+                    <string>Account</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableFrame" name="frameLeaveToWelcome">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <widget class="QWidget" name="horizontalLayoutWidget_4">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>201</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+                  <widget class="QLabel" name="lblQuitMenu">
+                   <property name="text">
+                    <string>Quit</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_14">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="SlotMachine">
+       <property name="styleSheet">
+        <string notr="true">QFrame#frameSlotMachineGame {
+    background-color: #141418;
+    border: 1px solid #1f1f22;
+    border-radius: 12px;
+    padding: 25px;
+}
+QLabel#lblSlotGameTitle {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+QLabel#lblSlotGameBalance {
+    font-size: 40px;
+	border-width: 2px;
+}
+QLabel#lblSlotGameBet {
+    font-size: 40px;
+	border-width: 2px;
+}
+QLabel#lblSlotGameQuickBet {
+    font-size: 40px;
+	border-width: 2px;
+}
+
+QLabel#lblReelDisplay_L {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+QLabel#lblReelDisplay_R{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+QLabel#lblReelDisplay_M{
+	font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+
+QPushButton#btnLeaveSlotMachine{
+	background-color: #FF3838;
+	border: 4px solid #DC0000;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnLeaveSlotMachine:hover{
+	color:&quot;white&quot;;
+	background-color: #DC0000;
+	border: 4px solid #DC0000;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnSlotGameSpin{
+	background-color: #4988C4;
+	border: 4px solid #1C4D8D;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnSlotGameSpin:hover{
+	color:&quot;white&quot;;
+	background-color: #1C4D8D;
+	border: 4px solid #1C4D8D;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#SGQB10{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#SGQB10:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#SGQB50{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#SGQB50:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#SGQB100{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#SGQB100:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#SGQB500{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#SGQB500:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_15">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1281</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_16">
+         <item>
+          <widget class="QFrame" name="frameSlotMachineGame">
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_17">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="1" column="2">
+               <widget class="QLabel" name="lblSlotGameBalance">
+                <property name="text">
+                 <string>Balance: 000000000C</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <spacer name="verticalSpacer_31">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+               <widget class="QLabel" name="lblSlotGameTitle">
+                <property name="text">
+                 <string>Slot Machine</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QFrame" name="ReelDisplayCard_L_2">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <widget class="QWidget" name="verticalLayoutWidget_13">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>401</width>
+                   <height>81</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_14">
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+                   <widget class="QLabel" name="lblReelDisplay_M">
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>BAR</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item row="8" column="1">
+               <widget class="QPushButton" name="btnLeaveSlotMachine">
+                <property name="text">
+                 <string>Return</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QPushButton" name="btnSlotGameSpin">
+                <property name="text">
+                 <string>Spin</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <spacer name="verticalSpacer_32">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="0">
+               <widget class="QFrame" name="ReelDisplayCard_L">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <widget class="QWidget" name="verticalLayoutWidget_12">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>391</width>
+                   <height>81</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                   <widget class="QLabel" name="lblReelDisplay_L">
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>BAR</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QFrame" name="ReelDisplayCard_L_3">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <widget class="QWidget" name="verticalLayoutWidget_14">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>391</width>
+                   <height>81</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_15">
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+                   <widget class="QLabel" name="lblReelDisplay_R">
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>BAR</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_12">
+                <item alignment="Qt::AlignmentFlag::AlignRight">
+                 <widget class="QLabel" name="lblSlotGameBet">
+                  <property name="text">
+                   <string>Bet:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="sbSlotGameBet">
+                  <property name="minimum">
+                   <number>10</number>
+                  </property>
+                  <property name="maximum">
+                   <number>99999</number>
+                  </property>
+                  <property name="singleStep">
+                   <number>0</number>
+                  </property>
+                  <property name="value">
+                   <number>10</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="4" column="2">
+               <layout class="QHBoxLayout" name="horizontalLayout_13">
+                <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                 <widget class="QLabel" name="lblSlotGameQuickBet">
+                  <property name="text">
+                   <string>Quick Bet</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="SGQB50">
+                    <property name="text">
+                     <string>50</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="SGQB10">
+                    <property name="text">
+                     <string>10</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="SGQB100">
+                    <property name="text">
+                     <string>100</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="SGQB500">
+                    <property name="text">
+                     <string>500</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item row="7" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+               <widget class="QLabel" name="lblSlotGameResult">
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>You won: xxx</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Blackjack">
+       <property name="styleSheet">
+        <string notr="true">QFrame#frameBlackjackGame {
+    background-color: #141418;
+    border: 1px solid #1f1f22;
+    border-radius: 12px;
+    padding: 25px;
+}
+QLabel#lblBlackjackGameTitle {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+QLabel#lblBlackjackGameBalance {
+    font-size: 40px;
+	border-width: 2px;
+}
+QLabel#lblBlackjackGameBet {
+    font-size: 40px;
+	border-width: 2px;
+}
+QLabel#lblBlackjackGameQuickBet {
+    font-size: 40px;
+	border-width: 2px;
+}
+
+QLabel#lblBlackjackDealerTitle {
+    font-size: 16px;
+	border-width: 2px;
+}
+QLabel#lblBlackjackPlayerTitle {
+    font-size: 16px;
+	border-width: 2px;
+}
+QLabel#lblBlackjackDealerStatus {
+    font-size: 16px;
+	border-width: 2px;
+}
+QLabel#lblBlackjackPlayerStatus {
+    font-size: 16px;
+	border-width: 2px;
+}
+QLabel#lblBlackjackDealerTotal {
+    font-size: 16px;
+	border-width: 2px;
+}
+QLabel#lblBlackjackPlayerTotal {
+    font-size: 16px;
+	border-width: 2px;
+}
+
+QPushButton#btnLeaveBlackjack{
+	background-color: #FF3838;
+	border: 4px solid #DC0000;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnLeaveBlackjack:hover{
+	color:&quot;white&quot;;
+	background-color: #DC0000;
+	border: 4px solid #DC0000;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnBlackjackGameHit{
+	background-color: #4988C4;
+	border: 4px solid #1C4D8D;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnBlackjackGameHit:hover{
+	color:&quot;white&quot;;
+	background-color: #1C4D8D;
+	border: 4px solid #1C4D8D;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnBlackjackGameDeal{
+	background-color: #B51717;
+	border: 4px solid #A11111;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnBlackjackGameDeal:hover{
+	color:&quot;white&quot;;
+	background-color: #A11111;
+	border: 4px solid #A11111;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnBlackjackGameStand{
+	background-color: #2E7D32;
+	border: 4px solid #1D6C21;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnBlackjackGameStand:hover{
+	color:&quot;white&quot;;
+	background-color: #1D6C21;
+	border: 4px solid #1D6C21;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#BJQB10{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#BJQB10:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#BJQB50{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#BJQB50:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#BJQB100{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#BJQB100:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#BJQB500{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#BJQB500:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_18">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1281</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_22">
+         <item>
+          <widget class="QFrame" name="frameBlackjackGame">
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_23">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="3" column="1">
+               <layout class="QGridLayout" name="playerFullLayout">
+                <item row="3" column="0">
+                 <widget class="QLabel" name="lblBlackjackPlayerStatus">
+                  <property name="text">
+                   <string>Player Status:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <layout class="QHBoxLayout" name="playerCardLayout"/>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lblBlackjackPlayerTitle">
+                  <property name="text">
+                   <string>Player</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="lblBlackjackPlayerTotal">
+                  <property name="text">
+                   <string>Player Total:</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+               <widget class="QLabel" name="lblBlackjackGameTitle">
+                <property name="text">
+                 <string>Blackjack</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="2">
+               <widget class="QPushButton" name="btnBlackjackGameStand">
+                <property name="text">
+                 <string>Stand</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+               <widget class="QLabel" name="lblBlackjackGameResult">
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>You won: xxx</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QPushButton" name="btnBlackjackGameHit">
+                <property name="text">
+                 <string>Hit</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="2">
+               <layout class="QHBoxLayout" name="horizontalLayout_24">
+                <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                 <widget class="QLabel" name="lblBlackjackGameQuickBet">
+                  <property name="text">
+                   <string>Quick Bet</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QGridLayout" name="gridLayout_10">
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="BJQB50">
+                    <property name="text">
+                     <string>50</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="BJQB10">
+                    <property name="text">
+                     <string>10</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="BJQB100">
+                    <property name="text">
+                     <string>100</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="BJQB500">
+                    <property name="text">
+                     <string>500</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="2" alignment="Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter">
+               <widget class="QLabel" name="lblBlackjackGameBalance">
+                <property name="text">
+                 <string>Balance: 000000000C</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QPushButton" name="btnBlackjackGameDeal">
+                <property name="text">
+                 <string>Deal</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <spacer name="verticalSpacer_16">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>400</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="7" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_22">
+                <item alignment="Qt::AlignmentFlag::AlignRight">
+                 <widget class="QLabel" name="lblBlackjackGameBet">
+                  <property name="text">
+                   <string>Bet:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="sbBlackjackGameBet">
+                  <property name="minimum">
+                   <number>10</number>
+                  </property>
+                  <property name="maximum">
+                   <number>99999</number>
+                  </property>
+                  <property name="singleStep">
+                   <number>0</number>
+                  </property>
+                  <property name="value">
+                   <number>10</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="1">
+               <layout class="QGridLayout" name="dealerFullLayout">
+                <item row="3" column="0">
+                 <widget class="QLabel" name="lblBlackjackDealerStatus">
+                  <property name="text">
+                   <string>Dealer Status:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lblBlackjackDealerTitle">
+                  <property name="text">
+                   <string>Dealer</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="lblBlackjackDealerTotal">
+                  <property name="text">
+                   <string>Dealer Total:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <layout class="QHBoxLayout" name="dealerCardLayout"/>
+                </item>
+               </layout>
+              </item>
+              <item row="4" column="1">
+               <spacer name="verticalSpacer_34">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0">
+               <spacer name="verticalSpacer_39">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>400</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="8" column="1">
+               <widget class="QPushButton" name="btnLeaveBlackjack">
+                <property name="text">
+                 <string>Return</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Store">
+       <property name="styleSheet">
+        <string notr="true">
+QFrame#storeCard {
+    background-color: #141418;
+    border: 6px solid #af9146;
+    border-radius: 12px;
+    padding: 25px;
+}
+QLineEdit {
+    background-color: #1a1c20;
+    border: 1px solid #00eaff;
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+    font-size: 16px;
+}
+QPushButton#btnLoginConfirm {
+    background-color: #141418;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+QPushButton#btnLoginConfirm:hover {
+    background-color: #00eaff;
+    color: #0d0d0f;
+}
+QLabel#lblToRegister {
+    color: #00eaff;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+QLabel#lblToRegister:hover {
+    color: #66f0ff;
+}
+
+QLabel#lblStoreBalance {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QLabel#lblBalanceActualStore {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnPurchase10{
+	background-color: #002f2f;
+	border: 5px solid #002323;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnPurchase20{
+	background-color: #002f2f;
+	border: 6px solid #002323;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnPurchase50{
+	background-color: #002f2f;
+	border: 12px solid #002323;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+QPushButton#btnPurchase100{
+	background-color: #002f2f;
+	border: 12px solid #002323;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+QPushButton#btnPurchase250{
+	background-color: #002f2f;
+	border: 12px solid #002323;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+QPushButton#btnPurchase500{
+	background-color: #002f2f;
+	border: 12px solid #002323;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+QPushButton#btnLeaveStore{
+	background-color: #002323;
+	border: 12px solid #002323;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnLeaveStore:hover{
+	color:#cccccc;
+}
+QPushButton#btnPurchase10:hover{
+	color:#cccccc;
+}
+QPushButton#btnPurchase20:hover{
+	color:#cccccc;
+}
+QPushButton#btnPurchase50:hover{
+	color:#cccccc;
+}
+QPushButton#btnPurchase100:hover{
+	color:#cccccc;
+}
+QPushButton#btnPurchase250:hover{
+	color:#cccccc;
+}
+QPushButton#btnPurchase500:hover{
+	color:#cccccc;
+}</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_10">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1281</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+          <widget class="QFrame" name="storeCard">
+           <property name="minimumSize">
+            <size>
+             <width>400</width>
+             <height>600</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget_9">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>0</y>
+              <width>391</width>
+              <height>591</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <spacer name="verticalSpacer_17">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item alignment="Qt::AlignmentFlag::AlignRight">
+                <widget class="QLabel" name="lblStoreBalance">
+                 <property name="text">
+                  <string>Balance: </string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignLeft">
+                <widget class="QLabel" name="lblBalanceActualStore">
+                 <property name="text">
+                  <string>0000000C</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="PurchaseLayout">
+               <item row="2" column="1">
+                <widget class="QPushButton" name="btnPurchase500">
+                 <property name="text">
+                  <string>500C</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QPushButton" name="btnPurchase100">
+                 <property name="text">
+                  <string>100C</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="btnPurchase250">
+                 <property name="text">
+                  <string>250C</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="btnPurchase20">
+                 <property name="text">
+                  <string>20C</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="btnPurchase50">
+                 <property name="text">
+                  <string>50C</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QPushButton" name="btnPurchase10">
+                 <property name="text">
+                  <string>10C</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_26">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QPushButton" name="btnLeaveStore">
+                 <property name="text">
+                  <string>Return</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_29">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_30">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Account">
+       <property name="styleSheet">
+        <string notr="true">QFrame#accountCard {
+    background-color: #141418;
+    border: 6px solid #af9146;
+    border-radius: 12px;
+    padding: 25px;
+}
+QLabel{
+	font-size: 20px;
+}
+QLabel#lblAccountTitle{
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+QPushButton#btnLeaveAccount{
+	background-color: #FF3838;
+	border: 4px solid #DC0000;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnLeaveAccount:hover{
+	color:&quot;white&quot;;
+	background-color: #DC0000;
+	border: 4px solid #DC0000;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_11">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1281</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_20">
+         <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+          <widget class="QFrame" name="accountCard">
+           <property name="minimumSize">
+            <size>
+             <width>400</width>
+             <height>600</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget_17">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>0</y>
+              <width>391</width>
+              <height>591</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_21">
+             <item>
+              <spacer name="verticalSpacer_38">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item alignment="Qt::AlignmentFlag::AlignHCenter">
+              <widget class="QLabel" name="lblAccountTitle">
+               <property name="text">
+                <string>Account</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_33">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QLabel" name="lblAccountUsernameText">
+                 <property name="text">
+                  <string>username</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_16">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QLabel" name="lblAccountBalanceText">
+                 <property name="text">
+                  <string>0000000C</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_19">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QLabel" name="lblAccountBJGamesPlayedText">
+                 <property name="text">
+                  <string>XXX Times</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QLabel" name="lblAccountRGamesPlayedText">
+                 <property name="text">
+                  <string>XXX Times</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_21">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QLabel" name="lblAccountSMGamesPlayedText">
+                 <property name="text">
+                  <string>XXX Times</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_35">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <item>
+                <widget class="QPushButton" name="btnLeaveAccount">
+                 <property name="text">
+                  <string>Return</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_36">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_37">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Roulette">
+       <property name="styleSheet">
+        <string notr="true">QFrame#frameRouletteGame {
+    background-color: #141418;
+    border: 1px solid #1f1f22;
+    border-radius: 12px;
+    padding: 25px;
+}
+QLabel#lblRouletteGameTitle {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+QLabel#lblRouletteGameBalance {
+    font-size: 40px;
+	border-width: 2px;
+}
+QLabel#lblRouletteGameBet {
+    font-size: 40px;
+	border-width: 2px;
+}
+QLabel#lblRouletteGameQuickBet {
+    font-size: 40px;
+	border-width: 2px;
+}
+
+QLabel#lblRouletteColor {
+    font-size: 40px;
+	border-width: 2px;
+}
+
+QLabel#lblRouletteNumber {
+    font-size: 40px;
+	border-width: 2px;
+}
+
+QLabel#lblRouletteBetType {
+    font-size: 30px;
+	border-width: 2px;
+}
+
+QLabel#lblRouletteSingleNumberBet {
+    font-size: 20px;
+	border-width: 2px;
+}
+QLabel#lblRouletteNumberSingle {
+    font-size: 20px;
+	border-width: 2px;
+}
+QLabel#lblRouletteRowsBet {
+    font-size: 20px;
+	border-width: 2px;
+}
+QLabel#lblRoulette1To1Bets{
+    font-size: 20px;
+	border-width: 2px;
+}
+
+QPushButton#RGQB10{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#RGQB10:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#RGQB50{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#RGQB50:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#RGQB100{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#RGQB100:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#RGQB500{
+	background-color: #408A71;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#RGQB500:hover{
+	color:&quot;white&quot;;
+	background-color: #285A48;
+	border: 4px solid #285A48;
+	font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+QPushButton#btnLeaveRoulette{
+	background-color: #FF3838;
+	border: 4px solid #DC0000;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnLeaveRoulette:hover{
+	color:&quot;white&quot;;
+	background-color: #DC0000;
+	border: 4px solid #DC0000;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnRouletteGameSpin{
+	background-color: #4988C4;
+	border: 4px solid #1C4D8D;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteGameSpin:hover{
+	color:&quot;white&quot;;
+	background-color: #1C4D8D;
+	border: 4px solid #1C4D8D;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnRouletteClearBet{
+	background-color: #ACACAC;
+	border: 4px solid #7B7B7B;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteClearBet:hover{
+	color:&quot;white&quot;;
+	background-color: #7B7B7B;
+	border: 4px solid #7B7B7B;
+	font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnRouletteRed{
+	background-color: #B51717;
+	border: 4px solid #A11111;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteRed:hover{
+	color:&quot;white&quot;;
+	background-color: #A11111;
+	border: 4px solid #A11111;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnRouletteBlack{
+	background-color: #313131;
+	border: 4px solid #222222;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteBlack:hover{
+	color:&quot;white&quot;;
+	background-color: #222222;
+	border: 4px solid #222222;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteEven{
+	background-color: #1565C0;
+	border: 4px solid #0454B0;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteEven:hover{
+	color:&quot;white&quot;;
+	background-color: #0454B0;
+	border: 4px solid #0454B0;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteOdd{
+	background-color: #00897B;
+	border: 4px solid #00786C;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteOdd:hover{
+	color:&quot;white&quot;;
+	background-color: #00786C;
+	border: 4px solid #00786C;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteLow{
+	background-color: #2E7D32;
+	border: 4px solid #1D6C21;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteLow:hover{
+	color:&quot;white&quot;;
+	background-color: #1D6C21;
+	border: 4px solid #1D6C21;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteHigh{
+	background-color: #6A1B9A;
+	border: 4px solid #590A89;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteHigh:hover{
+	color:&quot;white&quot;;
+	background-color: #590A89;
+	border: 4px solid #590A89;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRoulette1_12{
+	background-color: #F9A825;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRoulette1_12:hover{
+	color:&quot;white&quot;;
+	background-color: #E89714;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRoulette13_24{
+	background-color: #F9A825;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRoulette13_24:hover{
+	color:&quot;white&quot;;
+	background-color: #E89714;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRoulette25_36{
+	background-color: #F9A825;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRoulette25_36:hover{
+	color:&quot;white&quot;;
+	background-color: #E89714;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteColumn1{
+	background-color: #F9A825;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteColumn1:hover{
+	color:&quot;white&quot;;
+	background-color: #E89714;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnRouletteColumn2{
+	background-color: #F9A825;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteColumn2:hover{
+	color:&quot;white&quot;;
+	background-color: #E89714;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QPushButton#btnRouletteColumn3{
+	background-color: #F9A825;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteColumn3:hover{
+	color:&quot;white&quot;;
+	background-color: #E89714;
+	border: 4px solid #E89714;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteSingleNumber{
+	background-color: #283593;
+	border: 4px solid #172482;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+QPushButton#btnRouletteSingleNumber:hover{
+	color:&quot;white&quot;;
+	background-color: #172482;
+	border: 4px solid #172482;
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_16">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1281</width>
+          <height>743</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_18">
+         <item>
+          <widget class="QFrame" name="frameRouletteGame">
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_19">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="3" column="1" colspan="2" alignment="Qt::AlignmentFlag::AlignHCenter">
+               <widget class="QLabel" name="lblRouletteColor">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>-1</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Color: RED/BLACK/GREEN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLabel" name="lblRouletteGameBalance">
+                <property name="text">
+                 <string>Balance: 000000000C</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <layout class="QGridLayout" name="gridLayout_7">
+                <item row="1" column="2">
+                 <widget class="QPushButton" name="btnRoulette25_36">
+                  <property name="text">
+                   <string>25-36</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QPushButton" name="btnRoulette1_12">
+                  <property name="text">
+                   <string>1-12</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QPushButton" name="btnRoulette13_24">
+                  <property name="text">
+                   <string>13-24</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QPushButton" name="btnRouletteColumn1">
+                  <property name="text">
+                   <string>Column 1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QPushButton" name="btnRouletteColumn2">
+                  <property name="text">
+                   <string>Column 2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QPushButton" name="btnRouletteColumn3">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Column 3</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0" colspan="2">
+                 <widget class="QLabel" name="lblRouletteRowsBet">
+                  <property name="text">
+                   <string>Rows and Columns (2:1):</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="3" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+               <widget class="QLabel" name="lblRouletteNumber">
+                <property name="font">
+                 <font>
+                  <pointsize>-1</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Number: XX</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="2">
+               <widget class="QPushButton" name="btnRouletteClearBet">
+                <property name="text">
+                 <string>Clear Bet</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="1" column="0">
+                 <widget class="QPushButton" name="btnRouletteRed">
+                  <property name="text">
+                   <string>Red</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QPushButton" name="btnRouletteBlack">
+                  <property name="text">
+                   <string>Black</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lblRoulette1To1Bets">
+                  <property name="text">
+                   <string>1:1 Bets:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QPushButton" name="btnRouletteEven">
+                  <property name="text">
+                   <string>Even</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QPushButton" name="btnRouletteOdd">
+                  <property name="text">
+                   <string>Odd</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QPushButton" name="btnRouletteLow">
+                  <property name="text">
+                   <string>Low</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QPushButton" name="btnRouletteHigh">
+                  <property name="text">
+                   <string>High</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="6" column="2">
+               <widget class="QLabel" name="lblRouletteBetType">
+                <property name="text">
+                 <string>Current Bet Type:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+               <widget class="QLabel" name="lblRouletteGameTitle">
+                <property name="text">
+                 <string>Roulette</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <layout class="QGridLayout" name="gridLayout_9">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lblRouletteSingleNumberBet">
+                  <property name="text">
+                   <string>Single Number (35:1):</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="lblRouletteGreenReminder">
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel{
+	color: &quot;green&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Bet 0 for Green!</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QSpinBox" name="sbRouletteGameNumberSelection">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="maximum">
+                   <number>35</number>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <layout class="QHBoxLayout" name="horizontalLayout_23">
+                  <item>
+                   <widget class="QPushButton" name="btnRouletteSingleNumber">
+                    <property name="text">
+                     <string>Set Number</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="lblRouletteNumberSingle">
+                    <property name="text">
+                     <string>Number:</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item row="5" column="1">
+               <widget class="QPushButton" name="btnRouletteGameSpin">
+                <property name="text">
+                 <string>Spin</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <layout class="QHBoxLayout" name="horizontalLayout_15">
+                <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                 <widget class="QLabel" name="lblRouletteGameQuickBet">
+                  <property name="text">
+                   <string>Quick Bet</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="RGQB50">
+                    <property name="text">
+                     <string>50</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="RGQB10">
+                    <property name="text">
+                     <string>10</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="RGQB100">
+                    <property name="text">
+                     <string>100</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="RGQB500">
+                    <property name="text">
+                     <string>500</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item row="4" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+               <widget class="QLabel" name="lblRouletteGameResult">
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>You won: xxx</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="2">
+               <layout class="QHBoxLayout" name="horizontalLayout_14">
+                <item alignment="Qt::AlignmentFlag::AlignRight">
+                 <widget class="QLabel" name="lblRouletteGameBet">
+                  <property name="text">
+                   <string>Bet:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="sbRouletteGameBet">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="minimum">
+                   <number>10</number>
+                  </property>
+                  <property name="maximum">
+                   <number>99999</number>
+                  </property>
+                  <property name="singleStep">
+                   <number>0</number>
+                  </property>
+                  <property name="value">
+                   <number>10</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="7" column="1">
+               <widget class="QPushButton" name="btnLeaveRoulette">
+                <property name="text">
+                 <string>Return</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="RegisterPage">
+       <property name="styleSheet">
+        <string notr="true">QFrame#registerCard {
+    background-color: #141418;
+    border: 1px solid #1f1f22;
+    border-radius: 12px;
+    padding: 25px;
+}
+QLineEdit {
+    background-color: #1a1c20;
+    border: 1px solid #00eaff;
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+    font-size: 16px;
+}
+QPushButton#btnRegisterConfirm {
+    background-color: #141418;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+QPushButton#btnRegisterConfirm:hover {
+    background-color: #00eaff;
+    color: #0d0d0f;
+}
+QLabel#lblToLogin {
+    color: #00eaff;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+QLabel#lblToLogin:hover {
+    color: #66f0ff;
+}
+QLabel#lblRegisterTitle {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+
+</string>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1281</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <spacer name="verticalSpacer_18">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Policy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item alignment="Qt::AlignmentFlag::AlignHCenter">
+          <widget class="QFrame" name="registerCard">
+           <property name="minimumSize">
+            <size>
+             <width>400</width>
+             <height>600</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget_5">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>0</y>
+              <width>391</width>
+              <height>601</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <spacer name="verticalSpacer_19">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item alignment="Qt::AlignmentFlag::AlignHCenter">
+              <widget class="QLabel" name="lblRegisterTitle">
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Register</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_20">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>50</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="txtUsername_Reg">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Username:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_21">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="txtPassword_Reg">
+               <property name="contextMenuPolicy">
+                <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
+               </property>
+               <property name="echoMode">
+                <enum>QLineEdit::EchoMode::Password</enum>
+               </property>
+               <property name="placeholderText">
+                <string>Password:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblToLogin">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Already have an account? &lt;a href=&quot;#&quot;&gt;&lt;span style=&quot; color:#27bf73;&quot;&gt;Login here&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignmentFlag::AlignHCenter">
+              <widget class="QLabel" name="lblRegisterError">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	color:&quot;red&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_22">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>200</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QPushButton" name="btnRegisterConfirm">
+                 <property name="text">
+                  <string>Confirm</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnCancelReg">
+                 <property name="text">
+                  <string>Cancel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_23">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_24">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_25">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Policy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="WelcomePage">
+       <property name="minimumSize">
+        <size>
+         <width>1280</width>
+         <height>720</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1280</width>
+         <height>720</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#WelcomePage QPushButton:hover {
+    background-color: #00eaff;
+    color: #0d0d0f;
+}
+
+QWidget#WelcomePage QPushButton:pressed {
+    background-color: #0099aa;
+}
+
+
+</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>134</y>
+          <width>1122</width>
+          <height>424</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="lblWelcome">
+           <property name="font">
+            <font>
+             <family>Titillium Web</family>
+             <pointsize>70</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Welcome to TSI Casino</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblSubtitle">
+           <property name="font">
+            <font>
+             <family>Titillium Web</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>founded 2026</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>100</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>335</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnLogin">
+             <property name="minimumSize">
+              <size>
+               <width>190</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>190</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Login</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnRegister">
+             <property name="minimumSize">
+              <size>
+               <width>190</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>190</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Register</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnLeave">
+             <property name="minimumSize">
+              <size>
+               <width>190</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>190</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #141418;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #ff0000;
+    color: #0d0d0f;
+}
+
+QPushButton:pressed{
+	background-color:#531516;
+}</string>
+             </property>
+             <property name="text">
+              <string>Leave</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ClickableFrame</class>
+   <extends>QFrame</extends>
+   <header>clickableframe.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog2FA</class>
+ <widget class="QDialog" name="Dialog2FA">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    background-color: #141418;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #00eaff;
+    color: #0d0d0f;
+}
+
+QPushButton:pressed {
+    background-color: #0099aa;
+}
+
+QLabel {
+    color: #e6e6e6;
+}
+
+
+
+QWidget#Dialog2FA {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0d0f12,
+        stop:0.5 #0b0d10,
+        stop:1 #0a0c0f
+    );
+}
+
+QLineEdit {
+    background-color: #1a1c20;
+    border: 1px solid #00eaff;
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+    font-size: 16px;
+}
+
+QPushButton#btnLoginConfirm {
+    background-color: #141418;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+QPushButton#btnLoginConfirm:hover {
+    background-color: #00eaff;
+    color: #0d0d0f;
+}
+
+QLabel#lblCountdown{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+
+QLabel#lbl2FATitle{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-width: 2px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>451</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignmentFlag::AlignHCenter">
+     <widget class="QLabel" name="lbl2FATitle">
+      <property name="text">
+       <string>Enter Code:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="txt2FACode">
+      <property name="placeholderText">
+       <string>Code: ######</string>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignmentFlag::AlignHCenter">
+     <widget class="QLabel" name="lblError">
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color:&quot;red&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Policy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>440</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item alignment="Qt::AlignmentFlag::AlignHCenter">
+     <widget class="QLabel" name="lbl2FACountdown">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>60s</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnConfirm">
+        <property name="text">
+         <string>Confirm</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCancel">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

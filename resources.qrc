@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>resources.qrc</file>
+        <file>blackjack.jpg</file>
+        <file>roulette.jpeg</file>
+        <file>blackjack2.png</file>
+        <file>slots.jpg</file>
+        <file>casino-chip.png</file>
+        <file>user.png</file>
+        <file>user32x.png</file>
+        <file>casino-chip32x.png</file>
+    </qresource>
+</RCC>
